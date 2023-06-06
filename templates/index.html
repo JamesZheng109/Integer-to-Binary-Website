@@ -1,0 +1,17 @@
+<html lang='en'>
+	<head>
+		<title>Integer To Binary</title>
+		<link rel='stylesheet' href="{{url_for('static',filename='./style.css')}}"/>
+	</head>
+	<body>
+		<h1><u>Integer to Binary</u></h1>
+		<form action='/output' method="post">
+			<label for="variable">Input a number between 0-255</label>
+			<input type="text" name="variable" placeholder="0" required>
+		</form>
+		<br>
+		{%if output%}
+		<p>Output:{{output}}</p>
+		{%endif%}
+	</body>
+</html>
